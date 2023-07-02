@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --backColor: #6c2656;
+  --textColor: #f7f5f5;
+}
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.stroke-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #6c2656;
+}

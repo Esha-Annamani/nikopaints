@@ -1,0 +1,121 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--backColor); 
+    box-shadow: 0 5px 15px var(--backColor);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: 6rem;
+    height: 3.5rem;
+}
+
+.title{
+    color: var(--textColor);
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style:italic;
+    text-transform: uppercase;
+    transform: skew(-6deg);
+    letter-spacing: 0.01rem;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--textColor);
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover{
+    color: #e1f00e;
+    cursor: pointer;
+}
+
+.title:hover{
+    cursor: pointer;
+    color: #e1f00e;
+}
+
+#mobile{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 90px;
+        right: -300px;
+        width: 150px;
+        height: fit-content;
+        background: hsl(319, 43%, 35%);
+        box-shadow: 0 20px 30px #7e3266;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+        z-index: 2;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: block;
+    }
+
+    .menu-icon, .close-icon{
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--textColor);
+    }
+
+    .logo-img{
+        width: 2rem;
+        height: 1.5rem;
+    }
+    
+    .title{
+        color: var(--textColor);
+        font-size: 1rem;
+        font-weight: 700;
+        font-style:italic;
+        text-transform: uppercase;
+        transform: skew(-6deg);
+        letter-spacing: 0.01rem;
+    }
+
+    #navbar li a{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

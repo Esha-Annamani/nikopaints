@@ -1,0 +1,368 @@
+.hero-img{
+    height: 40rem;
+    position: relative;
+    z-index: 1;
+}
+
+  .hero-title {
+    font-family: "Arial", sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    color: #5b0540;
+    text-shadow: 2px 2px 4px #6c2656;
+  }
+
+  .custom-caption-1-1 {
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    z-index: 2;
+    padding: 0.5rem;
+  }
+
+  .custom-caption-1-2 {
+    position: absolute;
+    background-color: var(--backColor);
+    top: 1.5rem;
+    left: 1rem;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 0.5rem 0.5rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: yellow;
+  }
+
+  .custom-caption-1-2>div{
+    position: absolute;
+    background-color:#d6bcce;
+    width: 6rem;
+    height: 80%;
+    left: 10px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+  .hero-caption-1{
+    font-size: 30px;
+    padding: 0.5rem;
+    font-family: cursive;
+    font-weight: bold;
+    z-index: 1;   
+  }
+
+  .custom-caption-2-1{
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    z-index: 2;
+    padding: 0.5rem;
+  }
+
+  .custom-caption-2-2{
+    position: absolute;
+    z-index: 2;
+    left: 6rem;
+    top: 6rem;
+    padding: 0.5rem;
+  }
+
+.hero-caption-2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  padding: 0.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2; 
+  color: rgb(75, 128, 103);
+  left: 6rem;
+  top: 6rem;
+  gap: 1rem;
+}
+
+  .heart-icon{
+      width:2rem;
+      color: red;
+  }
+
+  .custom-caption-2-3{
+    position: absolute;
+    z-index: 2;
+    left: 6rem;
+    bottom: 4rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 20px 30px #7e3266;
+  }
+
+.email-container{
+    display: flex;
+    background-color: #5b0540;
+    padding: 1rem 1.5rem;
+    gap: 3rem;
+}
+
+.email-container>input{
+    background-color: #610b46;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+}
+
+::placeholder{
+    color: #743560;
+}
+
+.btn-email{
+  padding: 0.5rem;
+  font-weight: bold;
+  transition: 300ms all;
+  align-items: center;
+  justify-content: center;
+  background: var(--textColor);
+  color: #5b0540;
+}
+
+.btn-email:hover{
+  cursor: pointer;
+  background-color: yellow;
+}
+
+  .custom-caption-3-1 {
+    position: absolute;
+    top: 12rem;
+    right: 15rem;
+    z-index: 2;
+    padding: 1rem;
+  }
+
+  .custom-caption-3-2 {
+    position: absolute;
+    top: 6rem;
+    left: 9rem;
+    z-index: 2;
+    padding: 1rem;
+  }
+
+  .hero-caption-3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF6000;
+    background-color: #454545;
+    padding: 0.5rem;
+    width: fit-content;
+    text-align: center;
+    z-index: 2; 
+    top: 6rem;
+    left: 9rem;
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: 10px 20px 30px #454545;
+  }
+
+  .custom-caption-3-3 {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    top: 12rem;
+    left: 34.5rem;
+    z-index: 2;
+    padding: 1rem;
+  }
+
+.custom-caption-3-3>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-caption-3-3>div>span:nth-of-type(1){
+    color: yellow;
+    font-size: 1rem;
+}
+
+.custom-caption-3-3>div>span:nth-of-type(2){
+    color: var(--textColor);
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+  @media screen and (max-width:768px) {
+    .hero-img{
+        height: 20rem;
+    }
+    .custom-caption-1-1 {
+      position: absolute;
+      top: 1rem;
+      right: 0rem;
+      z-index: 2;
+      padding: 0.3rem;
+    }
+    
+      .hero-title {
+        font-family: "Arial", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        display: block;
+        position: relative;
+        color: #5b0540;
+        text-shadow: 1px 1px 2px #6c2656;
+      }
+
+      .custom-caption-1-2 {
+        position: absolute;
+        background-color: var(--backColor);
+        top: 1rem;
+        left: 0rem;
+        border-radius: 2rem;
+        width: fit-content;
+        padding: 0.5rem 0.5rem;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: yellow;
+        transform: scale(0.8);
+      }
+    
+      .custom-caption-1-2>div{
+        position: absolute;
+        background-color:#d6bcce;
+        width: 3rem;
+        height: 80%;
+        left: 5px;
+        border-radius: 3rem;
+        z-index: 1;
+    }
+    
+      .hero-caption-1{
+        font-size: 15px;
+        padding: 0.3rem;
+        font-family: cursive;
+        font-weight: bold;
+        z-index: 1;
+      }
+
+      .hero-caption{
+        width: 10rem;
+      }
+
+      .custom-caption-2-1{
+        left: 1rem;
+        top: 1rem;
+        z-index: 2;
+        padding: 0.3rem;
+      }
+    
+      .custom-caption-2-2{
+        z-index: 2;
+        left: 0.5rem;
+        top: 3rem;
+        padding: 0.3rem;
+      }
+    
+    .hero-caption-2{
+      font-size: 15px;
+      padding: 0.3rem;
+      left: 2rem;
+      top: 3rem;
+      gap: 0.5rem;
+      border-radius: 3px;
+    }
+    
+      .heart-icon{
+          width:1rem;
+      }
+    
+      .custom-caption-2-3{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 0.3rem;
+        box-shadow: 0 10px 15px #7e3266;
+      }
+    
+    .email-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 0.7rem;
+        gap: 1.5rem;
+    }
+
+    .btn-email{
+      padding: 0.3rem;
+      transition: 150ms all;
+      background: var(--textColor);
+      color: #5b0540;
+    }
+
+    .custom-caption-3-1 {
+      top: 6rem;
+      right: 3rem;
+      padding: 0.5rem;
+    }
+  
+    .custom-caption-3-2 {
+      top: 2.6rem;
+      left: 2rem;
+      padding: 0.5rem;
+    }
+  
+    .hero-caption-3{
+      font-family: cursive;
+      font-size: 7px;
+      font-weight: 700;
+      padding: 0.3rem;
+      z-index: 2; 
+      top: 2.6rem;
+      left: 2rem;
+      gap: 0.5rem;
+      border-radius: 4px;
+      box-shadow: 8px 12px 25px #454545;
+    }
+  
+    .custom-caption-3-3 {
+      gap: 0.5rem;
+      bottom: 0rem;
+      left: 1rem;
+      padding: 0.5rem;
+    }
+
+    .custom-caption-3-3{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .custom-caption-3-3>div>span:nth-of-type(1){
+      color: yellow;
+      font-size: 0.8rem;
+  }
+  
+  .custom-caption-3-3>div>span:nth-of-type(2){
+      color: var(--backColor);
+      font-size: 10px;
+  }
+  
+ 
+  }
+
